@@ -30,26 +30,35 @@
         android:layout_weight="1"
         android:padding="25dp"
         android:weightSum="3">
+
         <Button
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:background="@drawable/ic_photo_library_black_36dp"
-            android:id="@+id/library_button"
-            android:layout_marginRight="30dp"
+            android:id="@+id/picture_button"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="1"/>
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:background="@drawable/ic_photo_camera_black_24dp"
-            android:id="@+id/picture_button"
+            android:id="@+id/library_button"
+            android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1"/>
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" />
+
         <Button
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:id="@+id/send_button"
-            android:layout_marginLeft="30dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/ic_backup_black_36dp"
             android:layout_weight="1"/>
 
