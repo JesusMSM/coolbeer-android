@@ -11,47 +11,60 @@
     android:weightSum="5"
     tools:context="es.jj.coolbeer.MainActivity">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:orientation="vertical"
         android:layout_weight="4">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/progressBar"
+            android:visibility="gone"/>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:src="@drawable/logo_biere"
             android:id="@+id/photo"/>
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:layout_weight="1"
         android:padding="25dp"
-        android:weightSum="3">
+        >
+
         <Button
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:background="@drawable/ic_photo_library_black_36dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/gallery"
+            android:layout_toLeftOf="@+id/picture_button"
             android:id="@+id/library_button"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"/>
+            android:layout_marginRight="50dp"
+            />
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:background="@drawable/ic_photo_camera_black_24dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/camera"
             android:id="@+id/picture_button"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"/>
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
         <Button
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
             android:id="@+id/send_button"
-            android:layout_marginLeft="30dp"
-            android:background="@drawable/ic_backup_black_36dp"
-            android:layout_weight="1"/>
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/upload"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/picture_button" />
 
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

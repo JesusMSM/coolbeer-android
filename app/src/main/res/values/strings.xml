@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CoolBeer</string>
+    <string name="title_activity_results">Résultats</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
